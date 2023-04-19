@@ -10,25 +10,28 @@ body{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
     align-items: left;
-    max-width: 1376px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 0%;
     background-image: linear-gradient(to left, #015c92, #004e99);
     color: white;
-    margin-top: -24px;
-    margin-left: -15px;
-    margin-right: -11px;
+    margin-top: -1%;
+    margin-left: 0%;
+    margin-right: -26%;
     border: none;
     border-radius: 80px;
-
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
 }
 li{
     display: inline-block;
     margin: 20px;
     list-style: none;
+    
+
     
 }
 
@@ -49,12 +52,15 @@ a:hover{
 
  .sub-menu li ul{
 position:absolute;
-top:25px;
+top:18px;
 left:0px;
-background-color: gray;
+background-image: linear-gradient(to left, #015c92, #004e99);
 display:none;
 border: none;
 border-radius: 5px;
+margin-left: -61px;
+font-family: 'Poppins', sans-serif;
+font-weight: lighter;
  }
 
 .sub-menu li:hover ul, .sub-menu li.over ul{display:block; transition: 0.3s all;}
@@ -70,18 +76,42 @@ border-radius: 5px;
 }
 
 .sub-menu li a:hover{
-    background:#235bd3;
-    color:#fff;
+    /* background:white;
+    /* color:#fff; */
+    /* transition: 0.3s all; */
+    /* color:  hwb(221 12% 14%); */
+    color:  hwb(221 12% 14%); 
     transition: 0.3s all;
+    text-decoration: none;
 }
 .sub-menu{
-    margin-right: 62px;
-    margin-left: -52px;
-    margin-top: 30px;
+    margin-right: -1%;
+    margin-left: 10%;
+    margin-top: 2%;
 }
 .img img{
     width: 96px;
-    margin-right: -100px;
-    margin-top: 13px;
+    margin-right: 0%;
+    margin-top: 6%;
+    margin-left: 100%;
+    display: flex;
 
+}
+
+.logo img{
+    width: 38%;
+}
+.logo{
+    margin-top: -12%;
+    padding: 0%;
+    width: 50%;
+    margin-left: 40%;
+}
+.word h2{
+    font-family: 'Questrial', sans-serif;
+}
+.word{
+    display: flex;
+    margin-left: 45%;
+    margin-top: 4%;
 }

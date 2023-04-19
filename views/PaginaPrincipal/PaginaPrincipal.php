@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title> SESMT Pagina Principal</title>
-    <link rel="stylesheet" href="./Style/PaginaPrincipal.css">
+    <link rel="stylesheet" href="/../SESMTDigital/views/PaginaPrincipal/Style/PaginaPrincipal.css">
  
 </head>
 
@@ -12,7 +12,7 @@
 <body>
 <nav>
 <div class="img">
-        <img src="../imagens/logBranca_SESMT.png"alt="">
+        <img src="/../SESMTDigital/views/imagens/logBranca_SESMT.png"alt="">
     </div>
    <ul class="sub-menu">
     <a>
@@ -60,6 +60,17 @@
    </ul>
 
 </nav>
+    <div class="word">
+     <h2> 
+        Bem-Vindo
+    </h2>
+    </div>
+ <div class="logo">
+    <img src="/../SESMTDigital/views/imagens/SESMTDigital-logo.png" alt="">
+ </div>
+
+
+
 
 </body>
 

@@ -1,0 +1,69 @@
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+nav{
+    display: flex;
+   
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #015c92, #050d46);
+    color: white;
+    /* padding: 30px; */
+    margin: -15%;
+    margin-top: -17%;
+
+}
+
+.img img{
+    display: flex;
+    width: 137px;
+    margin-right: 0%;
+    margin-top: 23%;
+    margin-left: -50%;
+}
+
+#titulo{
+    margin-left: 15%;
+    margin-right: 40%;
+    margin-top: 4%;
+}
+
+.inspecao h1 {
+        font-family:'Questrial', sans-serif ;
+        color:#050d46;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+}
+.inspecao input {
+    display: flex;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-color: gray;
+    width: 20%;
+    border-radius: 10px;
+    height:3rem;
+    justify-content: space-around;
+    margin-left: 40%;
+}
+.inspecao label{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+
+    
+}
+/* inspecao label .bi bi-geo-alt-fill{
+  .  margin-top: 6px ;
+} */
+.inspecao{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
