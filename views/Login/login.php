@@ -16,7 +16,7 @@
         <div class="h3"><h3>Sign in</h3></div>
         <label for="login">Login</label>
         <div >
-            <input class="log" type="email"  id="login"  >
+            <input class="log" type="text"  id="login"  >
         </div>
         <label for="senha">Senha</label>
         <div >

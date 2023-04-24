@@ -64,6 +64,11 @@ class UsuarioController
         $this->loadView("PaginaPrincipal/PaginaPrincipal.php");
     }
 
+
+    private function carregarForm(){
+        $this->loadView("Formulario/formulario.php");
+    }
+
 }
 
 

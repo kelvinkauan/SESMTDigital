@@ -21,7 +21,7 @@
        <a href="#">
            <li>Formulários
            <ul >
-               <li><a href="#">Relato de Perigo</a></li>
+               <li><a href="../Controller/controller.php?action=carregarForm">Relato de Perigo</a></li>
                <li><a href="#">APR Gravada</a></li>
                <li><a href="#">Check List Veículo</a></li>
                <li><a href="#">Check List EPI</a></li>

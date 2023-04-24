@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     
 
-    <link rel="stylesheet" href="./Style/formulario.css">
+    <link rel="stylesheet" href="/../SESMTDigital/views/Formulario/Style/formulario.css">
     <title>Relato de Perigo</title>
 </head>
 <body>
@@ -706,13 +706,14 @@
                 <br>
         </div>
         <div class="avaliacaoGeralInspec"> 
+                    <span>Avaliação Geral da Inspeção: </span>
         <div class="opcoes-avaliacaoGeralInspec">
                 <div>
-                <input type="radio" name="avaliacaoGeralInspec" id="avaliacaoGeralInspec-total" value="total" >
+                <input type="radio" name="avaliacaoGeralInspec" id="avaliacaoGeralInspec-total" value="total" required >
                 <label for="avaliacaoGeralInspec-total">Paralização Total da Atividade</label>
-                <input type="radio" name="avaliacaoGeralInspec" id="avaliacaoGeralInspec-parcial"  value="parcial">
+                <input type="radio" name="avaliacaoGeralInspec" id="avaliacaoGeralInspec-parcial"  value="parcial" required>
                 <label for="avaliacaoGeralInspec-parcial">Paralização Parcial da Atividade</label>
-                <input type="radio" name="avaliacaoGeralInspec" id="avaliacaoGeralInspec-Sem" value="sem_paralização">
+                <input type="radio" name="avaliacaoGeralInspec" id="avaliacaoGeralInspec-Sem" value="sem_paralização" required>
                 <label for="avaliacaoGeralInspec-Sem">Sem Paralização da Atividade</label>
                 </div>
       
