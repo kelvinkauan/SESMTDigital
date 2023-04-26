@@ -1,72 +1,104 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
-
-}
-nav{
+    font-size: calc(0.7em + 0.5vw);
+  }
+  
+  /* Crie uma classe para centralizar elementos com flexbox */
+  .center {
     display: flex;
-   
-}
-.circle{
-    width: 500px;
-    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Crie uma classe para ajustar o tamanho da imagem com base na largura da viewport */
+  .img img {
+    width: calc(7vw + 30px);
+  }
+  
+  /* Estilize a barra de navegação com flexbox */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  .barra-nav{
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+    background-image: linear-gradient(to right, #015c92, #050d46);
+
+  }
+  
+  /* Estilize o círculo com flexbox e media queries */
+  /* .circle {
+    display: flex;
+    width: 100%;
+    height: 98vh;
+    max-height: 786vh;
+    max-width: 800px;
     border-radius: 50%;
     background-image: linear-gradient(to left, #015c92, #050d46);
     color: white;
     /* padding: 30px; */
-    margin: -15%;
-    margin-top: -17%;
-
-}
-
-.img img{
-    display: flex;
-    width: 137px;
-    margin-right: 0%;
-    margin-top: 18%;
-    margin-left: -29%;
-}
-
-#titulo{
-    margin-left: 15%;
-    margin-right: 40%;
+    /* margin: -388px;
+    margin-top: -350px;
+  } */
+   
+  @media (min-width: 768px) {
+    .circle {
+      margin-top: -17%;
+    }
+  }
+  
+  /* Ajuste o posicionamento do título com base na largura da viewport */
+  #titulo {
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 4%;
-}
-
-.inspecao h1 {
-        font-family:'Questrial', sans-serif ;
-        color:#050d46;
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-}
-.inspecao input {
-    display: flex;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    border-color: #050d46;
-    width: 20%;
-    border-radius: 10px;
-    height:3rem;
-    justify-content: space-around;
-    margin-left: 40%;
-}
-.inspecao label{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0%;
-
-    
-}
-/* inspecao label .bi bi-geo-alt-fill{
-  .  margin-top: 6px ;
-} */
-.inspecao{
+  }
+  
+  @media (min-width: 768px) {
+    #titulo {
+      margin-left: 15%;
+      margin-right: 40%;
+    }
+  }
+  
+  /* Estilize a seção de inspeção com flexbox e media queries */
+  .inspecao {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-}
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .inspecao h1 {
+    font-family: 'Questrial', sans-serif;
+    color: #050d46;
+    font-size: calc(1.5em + 1vw);
+    margin-bottom: 2%;
+  }
+  
+  .inspecao input {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: calc(3em + 1vw);
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: 2%;
+  }
+  
+  .inspecao label {
+    display: flex;
+    align-items: center;
+    font-size: calc(1em + 0.5vw);
+    margin-bottom: 1%;
+  }
 
 input[type="radio"] {
     display: none;
@@ -95,9 +127,9 @@ input[type="radio"] {
 .mtd-trabalho{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    height: 155vh;
+    height: 137vh;
 }
 .mtd-trabalho h1{
     font-family:'Questrial', sans-serif ;
@@ -110,16 +142,16 @@ input[type="radio"] {
     border: none;
     border-radius: 20px;
     width: 100%;
-    justify-content: center;
+    justify-content:center ;
     background-image: linear-gradient(to right, #015c92, #050d46);
 }
 
 .planejamento-servico{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    height: 82vh;
+    height: 70vh;
 }
 
 .planejamento-servico h1{
@@ -130,9 +162,9 @@ input[type="radio"] {
 .epc{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    height: 110vh;
+    height: 95vh;
 }
 
 .epc h1{
@@ -143,7 +175,7 @@ input[type="radio"] {
 .epi{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 62vh;
 }
@@ -156,7 +188,7 @@ input[type="radio"] {
 .rh{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 40vh;
 }
@@ -169,7 +201,7 @@ input[type="radio"] {
 .observacao{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 50vh;
 }
@@ -182,9 +214,9 @@ input[type="radio"] {
 .veiculo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    height: 223vh;
+    height: 190vh;
 }
 
 .veiculo h1{
@@ -195,7 +227,7 @@ input[type="radio"] {
 .assInspetor{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 43vh;
 }
@@ -211,7 +243,7 @@ input[type="radio"] {
 .ferramentas{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 30vh;
 }
@@ -240,5 +272,112 @@ input[type="radio"] {
  span{
     display: flex;
     align-items: center;
-    justify-content: center;
+    
  }
+
+
+    /* Estilos para telas grandes */
+ 
+@media (min-width: 1200px) {
+    .mtd-trabalho {
+      height: 202vh;
+    }
+    .planejamento-servico {
+      height: 112vh;
+    }
+    .epc {
+      height: 147vh;
+    }
+    .epi {
+      height: 81vh;
+    }
+    .rh {
+      height: 57vh;
+    }
+    .observacao {
+      height: 50vh;
+    }
+    .veiculo {
+      height: 270vh;
+    }
+    .assInspetor {
+      height: 20vh;
+    }
+    .ferramentas {
+      height: 40vh;
+    }
+  }
+  
+  /* Estilos para telas médias */
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .mtd-trabalho {
+      height: 181vh;
+    }
+    .planejamento-servico {
+      height: 100vh;
+    }
+    .epc {
+      height: 130vh;
+    }
+    .epi {
+      height: 72vh;
+    }
+    .rh {
+      height: 57vh;
+    }
+    .observacao {
+      height: 33vh;
+    }
+    .veiculo {
+      height: 268vh;
+    }
+    .assInspetor {
+      height: 30vh;
+    }
+    .ferramentas {
+      height: 35vh;
+    }
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 767px) {
+    .mtd-trabalho {
+      height: auto;
+      min-height: 100vh;
+    }
+    .planejamento-servico {
+      height: auto;
+      min-height: 50vh;
+    }
+    .epc {
+      height: auto;
+      min-height: 80vh;
+    }
+    .epi {
+      height: auto;
+      min-height: 50vh;
+    }
+    .rh {
+      height: auto;
+      min-height: 30vh;
+    }
+    .observacao {
+      height: auto;
+      min-height: 52vh;
+    }
+    .veiculo {
+      height: auto;
+      min-height: 120vh;
+    }
+    .assInspetor {
+      height: auto;
+      min-height: 20vh;
+    }
+    .ferramentas {
+      height: auto;
+      min-height: 10vh;
+    }
+    .btn-log {
+      margin-left: 93vh;
+    }
+  }

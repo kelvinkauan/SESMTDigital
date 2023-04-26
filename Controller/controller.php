@@ -68,7 +68,11 @@ class UsuarioController
     private function carregarForm(){
         $this->loadView("Formulario/formulario.php");
     }
+    
 
+    private function carregarGrafico(){
+        $this->loadView("Grafico/grafico.php");
+    }
 }
 
 
